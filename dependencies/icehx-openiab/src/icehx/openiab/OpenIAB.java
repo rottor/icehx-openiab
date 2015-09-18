@@ -241,7 +241,7 @@ public class OpenIAB extends Extension {
                         // Oh noes, there was a problem.
                         setupDone = false;
                         Log_e("**** Error: Problem setting up in-app billing: " + result);
-                        Toast.makeText(mainContext, "Problem setting up in-app billing: " + result, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(mainContext, "Problem setting up in-app billing: " + result, Toast.LENGTH_SHORT).show();
                     }
                     notifyServiceAvailable(result.isSuccess());
                 }
@@ -303,7 +303,7 @@ public class OpenIAB extends Extension {
                         inventoryDone = true;
                     } else {
                         Log_e("**** Error: Failed to query inventory: " + result);
-                        Toast.makeText(mainContext, "Error: Failed to query inventory: " + result, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(mainContext, "Error: Failed to query inventory: " + result, Toast.LENGTH_SHORT).show();
                     }
                     notifyInventoryAvailable(result.isSuccess());
                 }
